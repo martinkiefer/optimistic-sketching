@@ -1,10 +1,11 @@
 # optimistic-sketching
-An optimistic approach to FPGA-accelerated data-parallel sketching.
+An optimistic approach to FPGA-accelerated data-parallel sketching. This repository has an accompanying publication that is still
 
-Over the next few days, this repository will be filled with the artifacts listed below. Further information can be found in the individual README files
+Over the next few days, this repository will be filled with the artifacts listed below. Further information can be found in the individual README files.
 
 ## Requirements
 * Python 3.9+ (Code Generation, Dataset Generation)
+* Python Packages: antlr4-python3-runtime (Code Generation), tensorflow-probability (Zipf Data)
 * Vivado (we used 2021.2; for experiments with dummy I/O template)
 * Vitis (recently upgraded to 2022.1; for experiments with U250)
 * Xilinx Runtime (recently upgraded to 2022.1 + U250 XDMA 4.1 Shell)
