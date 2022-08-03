@@ -1,0 +1,20 @@
+{
+    "update_seed_size" : 33,
+    "offset_max_size" : 32,
+    "selector_seed_size" : 1024,
+    "value_size" : 64,
+    "state_size" : 64,
+    "compute_out_size" : 64,
+    "compute_neutral" : "\"0000000000000000000000000000000000000000000000000000000000000000\"",
+    "compute_function_file" : "inc.scf",
+    "update_function_file" : "max.suf",
+    "selector_function_file" : "h3.ssf",
+    "selector_function_variables" : {
+        "t1" : 32,
+        "t2" : 32
+    }, 
+    "update_function_variables" : {
+    },
+    "compute_function_variables" : {
+    }
+}
