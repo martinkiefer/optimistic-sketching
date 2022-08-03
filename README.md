@@ -57,8 +57,8 @@ Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource
 
 | Artifact                                  | Provided        | Notes                           |
 | -------                                   | --------        | --------------                  |
-| Select-Update ScotchDSL Descriptors       | Pending         |                                 |
-| Select-Map-Reduce ScotchDSL Descriptors   | Yes             | `Sketches/Select-Map-Reduce`     |
+| Select-Update ScotchDSL Descriptors       | Yes             | `Sketches/Select-Update`        |
+| Select-Map-Reduce ScotchDSL Descriptors   | Yes             | `Sketches/Select-Map-Reduce`    |
 | RTL Generators                            | Yes             | `ScotchDSL/`                    |
     
 ## Simulator
