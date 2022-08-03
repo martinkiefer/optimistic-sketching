@@ -4,11 +4,12 @@ An optimistic approach to FPGA-accelerated data-parallel sketching. This reposit
 Over the next few days, this repository will be filled with the artifacts listed below. Further information can be found in the individual README files.
 
 ## Requirements
-* Python 3.9+ (Code Generation, Dataset Generation)
-* Python Packages: antlr4-python3-runtime (Code Generation), tensorflow-probability (Zipf Data)
+* Python 3.9+ (RTL Generation, Dataset Generation)
+* Python Packages: antlr4-python3-runtime 4.9.3 (Code Generation), tensorflow-probability (we used 0.17.0, Zipf data)
 * Vivado (we used 2021.2; for experiments with dummy I/O template)
 * Vitis (recently upgraded to 2022.1; for experiments with U250)
 * Xilinx Runtime (recently upgraded to 2022.1 + U250 XDMA 4.1 Shell)
+* Java Runtime (for ANTLR4 parser generation, RTL Generation)
 * CUDA (we used 11.6, GPU baseline + accuracy experiments)
 * GCC (we used 9.4, CPU baseline)
 
@@ -21,13 +22,13 @@ For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742
 ## Datasets
 Our experiments use four different datasets:
 
-| Dataset     | Provided        | Notes          |
-| -------     | --------        | -------------- |
-| Uniform     | Pending         |                |
-| Zipf(rho)   | Pending         |                |
-| Cup'98      | Pending         |                |
-| Caida       | Pending         |                |
-| NYT         | Pending         |                |
+| Dataset                       | Provided        | Notes                                     |
+| -------                       | --------        | --------------                            |
+| Uniform                       | Yes             |`data/generate_uniform.sh`                 |
+| Zipf(1.05, 1.1, 1.5)          | Yes             |`data/generate_zipf.sh`                    |
+| Cup'98                        | Pending         |                                           |
+| Caida                         | Pending         |                                           |
+| NYT                           | Pending         |                                           |
 
 
 The accuracy experiments also require the groundtrouth for the approximate-group by query on real-world datasets. We will either provide it as binary data or as part of a larger ETL job for real-world datasets. 
@@ -48,12 +49,12 @@ Sketching for group-by application. Used in throughput experiments.
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
 
-| Artifact                                  | Provided        | Notes          |
-| -------                                   | --------        | -------------- |
-| Select-Update ScotchDSL Descriptors       | Pending         |                |
-| Select-Map-Reduce ScotchDSL Descriptors   | Pending         |                |
-| Code Generators                           | Pending         |                |
-
+| Artifact                                  | Provided        | Notes                     |
+| -------                                   | --------        | --------------            |
+| Select-Update ScotchDSL Descriptors       | Pending         |                           |
+| Select-Map-Reduce ScotchDSL Descriptors   | Pending         |                           |
+| RTL Generators                            | Yes             | `ScotchDSL/`              |
+    
 ## Simulator
 Computes the stall rate based on a binary input file containing keys.
 
