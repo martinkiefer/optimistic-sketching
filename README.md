@@ -33,6 +33,12 @@ Our experiments use four different datasets:
 
 The accuracy experiments also require the groundtrouth for the approximate-group by query on real-world datasets. We will either provide it as binary data or as part of a larger ETL job for real-world datasets. 
 
+| Groundtruth                   | Provided        | Notes                                     |
+| -------                       | --------        | --------------                            |
+| Cup'98                        | Pending         |                                           |
+| Caida                         | Pending         |                                           |
+| NYT                           | Pending         |                                           |
+
 While things are easy for artificial datasets, we are currently figuring out whether / how we can distribute the real-world datasets and derrivatives of them.
 
 ## Full Sketching Implementations
