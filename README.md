@@ -1,7 +1,7 @@
 # optimistic-sketching
 An optimistic approach to FPGA-accelerated data-parallel sketching. This repository accompanies a publication that is under submission. Stay tuned.
 
-Over the next few days, this repository will be filled with the artifacts listed below. Further information can be found in the individual README files.
+Over the next few days, this repository will be filled with the artifacts listed below. Further information will be provided in individual README files.
 
 ## Requirements
 * Python 3.9+ (RTL Generation, Dataset Generation)
@@ -22,24 +22,24 @@ For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742
 ## Datasets
 Our experiments use four different datasets:
 
-| Dataset                       | Provided        | Notes                                     |
-| -------                       | --------        | --------------                            |
-| Uniform                       | Yes             |`data/generate_uniform.sh`                 |
-| Zipf(1.05, 1.1, 1.5)          | Yes             |`data/generate_zipf.sh`                    |
-| Cup'98                        | Pending         |                                           |
-| Caida                         | Pending         |                                           |
-| NYT                           | Pending         |                                           |
+| Dataset                       | Provided          | Notes                                     |
+| -------                       | --------          | --------------                            |
+| Uniform                       | Yes               |`Data/generate_uniform.sh`                 |
+| Zipf(1.05, 1.1, 1.5)          | Yes               |`Data/generate_zipf.sh`                    |
+| WC'98                         | Yes               |`Data/generate_wc98.sh`                    |
+| Caida                         | Yes               | `Data/generate_caida.sh`                  |
+| NYT                           | Yes               | `Data/generate_nyt.sh`                    |
 
 
-The accuracy experiments also require the groundtrouth for the approximate-group by query on real-world datasets. We will either provide it as binary data or as part of a larger ETL job for real-world datasets. 
+The accuracy experiments also require the groundtrouth for the approximate-group by query on real-world datasets.
 
-| Groundtruth                   | Provided        | Notes                                     |
-| -------                       | --------        | --------------                            |
-| Cup'98                        | Pending         |                                           |
-| Caida                         | Pending         |                                           |
-| NYT                           | Pending         |                                           |
+| Groundtruth                   | Provided          | Notes                                     |
+| -------                       | --------          | --------------                            |
+| WC'98                         | Yes               |`Data/gt/nyt/generate.sh`                  |
+| Caida                         | Yes               |`Data/gt/caida/generate.sh`                |
+| NYT                           | Yes               |`Data/gt/nyt/generate.sh`                  |
 
-While things are easy for artificial datasets, we are currently figuring out whether / how we can distribute the real-world datasets and derrivatives of them.
+For now, we spare everyone the time- and storage-intensive preprocessing for real-wolrd datasets and just provide gzipped binary downloads. Datasets are still quite large, though. It's best to have around 50GB of free disk space.
 
 ## Full Sketching Implementations
 Sketching for group-by application. Used in throughput experiments.
@@ -66,7 +66,7 @@ Computes the stall rate based on a binary input file containing keys.
 
 | Artifact                              | Provided        | Notes          |
 | -------                               | --------        | -------------- |
-| Frontend + Dispatch Simulator         | Pending         |                |
+| Frontend + Dispatch Simulator         | Pending         | `Simulator/`|
 
 ## Sketch Evaluator
 Computes accuracy efficiently given input data and groundtruth. Requires CUDA and an according GPU.
