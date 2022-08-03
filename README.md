@@ -1,5 +1,5 @@
 # optimistic-sketching
-An optimistic approach to FPGA-accelerated data-parallel sketching. This repository has an accompanying publication that is still
+An optimistic approach to FPGA-accelerated data-parallel sketching. This repository accompanies a publication that is under submission. Stay tuned.
 
 Over the next few days, this repository will be filled with the artifacts listed below. Further information can be found in the individual README files.
 
