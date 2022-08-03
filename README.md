@@ -66,7 +66,7 @@ Computes the stall rate based on a binary input file containing keys.
 
 | Artifact                              | Provided        | Notes          |
 | -------                               | --------        | -------------- |
-| Frontend + Dispatch Simulator         | Pending         | `Simulator/`|
+| Frontend + Dispatch Simulator         | Yes             | `Simulator/`|
 
 ## Sketch Evaluator
 Computes accuracy efficiently given input data and groundtruth. Requires CUDA and an according GPU.
