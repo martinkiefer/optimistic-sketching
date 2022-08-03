@@ -12,7 +12,7 @@ Over the next few days, this repository will be filled with the artifacts listed
 * CUDA (we used 11.6, GPU baseline + accuracy experiments)
 * GCC (we used 9.4, CPU baseline)
 
-If you want to compile and run the FPGA parts without changing anything, you will need access to a U250 accelerator flashed with a compatibel deployment plattform. Otherwise you may have to make changes to the project. 
+If you want to compile and run the FPGA parts without changing anything, you will need access to a U250 accelerator flashed with a compatibel deployment platform. Otherwise you may have to make changes to the project. 
 
 For the CUDA parts, any recent Nvidia GPU will do. We used an A100. 
 
