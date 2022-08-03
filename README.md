@@ -55,11 +55,11 @@ Sketching for group-by application. Used in throughput experiments.
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
 
-| Artifact                                  | Provided        | Notes                     |
-| -------                                   | --------        | --------------            |
-| Select-Update ScotchDSL Descriptors       | Pending         |                           |
-| Select-Map-Reduce ScotchDSL Descriptors   | Pending         |                           |
-| RTL Generators                            | Yes             | `ScotchDSL/`              |
+| Artifact                                  | Provided        | Notes                           |
+| -------                                   | --------        | --------------                  |
+| Select-Update ScotchDSL Descriptors       | Pending         |                                 |
+| Select-Map-Reduce ScotchDSL Descriptors   | Yes             | `Sketches/Select-Map-Reduce`     |
+| RTL Generators                            | Yes             | `ScotchDSL/`                    |
     
 ## Simulator
 Computes the stall rate based on a binary input file containing keys.
