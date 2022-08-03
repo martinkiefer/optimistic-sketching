@@ -1,0 +1,1 @@
+outstate <= maxmax(unsigned(v(63 downto 32)), state);
