@@ -39,19 +39,21 @@ The accuracy experiments also require the groundtrouth for the approximate-group
 | Caida                         | Yes               |`Data/gt/caida/generate.sh`                |
 | NYT                           | Yes               |`Data/gt/nyt/generate.sh`                  |
 
-For now, we spare everyone the time- and storage-intensive preprocessing for real-wolrd datasets and just provide gzipped binary downloads. Datasets are still quite large, though. It's best to have around 50GB of free disk space.
+For now, we spare everyone the time- and storage-intensive preprocessing for real-wolrd datasets and just provide gzipped binary downloads from TUBs Nextcloud. Datasets are still quite large, though. It's best to have around 50GB of free disk space.
 
 ## Full Sketching Implementations
 Sketching for group-by application. Used in throughput experiments.
 
-| Implementation                      | Provided        | Notes                               |
-| -------                             | --------        | --------------                      |
-| U250, optimstic, oversubscribed     | Pending         |                                     |
-| U250, optimstic, regular            | Pending         |                                     |
-| U250, pessimistc                    | Pending         |                                     |
-| U250, host-code                     | Pending         |                                     |
-| CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP` |
-| CUDA                                | Yes             | `Application-Sketching/CUDA`        |
+| Implementation                      | Provided        | Notes                                             |
+| -------                             | --------        | --------------                                    |
+| U250, optimstic, oversubscribed     | Yes             | `Application-Sketching/Vitis-U250/oversubscribed` |
+| U250, optimstic, regular            | Yes             | `Application-Sketching/Vitis-U250/regular`        |
+| U250, pessimistc                    | Pending         |                                                   |
+| U250, host-code                     | Pending         |                                                   |
+| CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP`               |
+| CUDA                                | Yes             | `Application-Sketching/CUDA`                      |
+
+FPGA device code is provided as Vitis project zips available on TUBs nextcloud because projects are a little bloated. In the future, we will provide a script that automatically generates RTL, sets up Vitis, and compiles everything.
 
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
