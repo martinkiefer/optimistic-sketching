@@ -50,7 +50,7 @@ Sketching for group-by application. Used in throughput experiments.
 | U250, optimstic, regular            | Pending         |                                     |
 | U250, pessimistc                    | Pending         |                                     |
 | U250, host-code                     | Pending         |                                     |
-| CPU (vectorized + multithreaded)    | Pending         | `Application-Sketching/SIMD+OpenMP` |
+| CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP` |
 | CUDA                                | Pending         |                                     |
 
 ## RTL Generation
