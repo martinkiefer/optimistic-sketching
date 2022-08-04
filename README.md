@@ -44,14 +44,14 @@ For now, we spare everyone the time- and storage-intensive preprocessing for rea
 ## Full Sketching Implementations
 Sketching for group-by application. Used in throughput experiments.
 
-| Implementation                      | Provided        | Notes          |
-| -------                             | --------        | -------------- |
-| U250, optimstic, oversubscribed     | Pending         |                |
-| U250, optimstic, regular            | Pending         |                |
-| U250, pessimistc                    | Pending         |                |
-| U250, host-code                     | Pending         |                |
-| CPU (vectorized + multithreaded)    | Pending         |                |
-| CUDA                                | Pending         |                |
+| Implementation                      | Provided        | Notes                               |
+| -------                             | --------        | --------------                      |
+| U250, optimstic, oversubscribed     | Pending         |                                     |
+| U250, optimstic, regular            | Pending         |                                     |
+| U250, pessimistc                    | Pending         |                                     |
+| U250, host-code                     | Pending         |                                     |
+| CPU (vectorized + multithreaded)    | Pending         | `Application-Sketching/SIMD+OpenMP` |
+| CUDA                                | Pending         |                                     |
 
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
