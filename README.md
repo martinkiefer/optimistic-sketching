@@ -74,7 +74,7 @@ Computes accuracy efficiently given input data and groundtruth. Requires CUDA an
 
 | Artifact                              | Provided        | Notes          |
 | -------                               | --------        | -------------- |
-| Sketch Evaluator                      | Pending         |                |
+| Sketch Evaluator                      | Yes             | `Evaluator/`   |
 
 ## Experiment Sets
 | Experiment                                           | Provided        | Notes          |
