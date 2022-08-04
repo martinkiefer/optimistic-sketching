@@ -51,7 +51,7 @@ Sketching for group-by application. Used in throughput experiments.
 | U250, pessimistc                    | Pending         |                                     |
 | U250, host-code                     | Pending         |                                     |
 | CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP` |
-| CUDA                                | Pending         |                                     |
+| CUDA                                | Yes             | `Application-Sketching/CUDA`        |
 
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
