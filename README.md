@@ -49,6 +49,7 @@ Sketching for group-by application. Used in throughput experiments.
 | U250, optimstic, oversubscribed     | Pending         |                |
 | U250, optimstic, regular            | Pending         |                |
 | U250, pessimistc                    | Pending         |                |
+| U250, host-code                     | Pending         |                |
 | CPU (vectorized + multithreaded)    | Pending         |                |
 | CUDA                                | Pending         |                |
 
