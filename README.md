@@ -48,12 +48,12 @@ Sketching for group-by application. Used in throughput experiments.
 | -------                             | --------        | --------------                                    |
 | U250, optimstic, oversubscribed     | Yes             | `Application-Sketching/Vitis-U250/oversubscribed` |
 | U250, optimstic, regular            | Yes             | `Application-Sketching/Vitis-U250/regular`        |
-| U250, pessimistc                    | Pending         |                                                   |
+| U250, pessimistc                    | Yes             | `Application-Sketching/Vitis-U250/pessimistic`    |
 | U250, host-code                     | Pending         |                                                   |
 | CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP`               |
 | CUDA                                | Yes             | `Application-Sketching/CUDA`                      |
 
-FPGA device code is provided as Vitis project zips available on TUBs nextcloud because projects are a little bloated. In the future, we will provide a script that automatically generates RTL, sets up Vitis, and compiles everything.
+FPGA device code is provided as Zips than can be imported using `Vitis -> File -> Import...`. Large BLOBs in Git are not ideal and we are working on a smarter solution.
 
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
