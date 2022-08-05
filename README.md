@@ -49,7 +49,7 @@ Sketching for group-by application. Used in throughput experiments.
 | U250, optimstic, oversubscribed     | Yes             | `Application-Sketching/Vitis-U250/oversubscribed` |
 | U250, optimstic, regular            | Yes             | `Application-Sketching/Vitis-U250/regular`        |
 | U250, pessimistc                    | Yes             | `Application-Sketching/Vitis-U250/pessimistic`    |
-| U250, host-code                     | Pending         |                                                   |
+| U250, host-code                     | Yes             | `Application-Sketching/Vitis-U250/host` |
 | CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP`               |
 | CUDA                                | Yes             | `Application-Sketching/CUDA`                      |
 
