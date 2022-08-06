@@ -25,10 +25,10 @@ Our experiments use four different datasets:
 | Dataset                       | Provided          | Notes                                     |
 | -------                       | --------          | --------------                            |
 | Uniform                       | Yes               |`Data/generate_uniform.sh`                 |
-| Zipf(1.05, 1.1, 1.5)          | Yes               |`Data/generate_zipf.sh`                    |
+| Zipf($rho)                    | Yes               |`Data/generate_zipf.sh $rho`                    |
 | WC'98                         | Yes               |`Data/generate_wc98.sh`                    |
-| Caida                         | Yes               | `Data/generate_caida.sh`                  |
-| NYT                           | Yes               | `Data/generate_nyt.sh`                    |
+| Caida                         | Yes               |`Data/generate_caida.sh`                  |
+| NYT                           | Yes               |`Data/generate_nyt.sh`                    |
 
 
 The accuracy experiments also require the groundtrouth for the approximate-group by query on real-world datasets.
@@ -81,8 +81,8 @@ Computes accuracy efficiently given input data and groundtruth. Requires CUDA an
 ## Experiment Sets
 | Experiment                                           | Provided        | Notes          |
 | -------                                              | --------        | -------------- |
-| Queue Size Exploration (Simulator)                   | Pending         |                |
-| Merger Exploration     (Simulator)                   | Pending         |                |
-| Ressource/Fmax Exploration (RTL Generator)           | Pending         |                |
-| Throughput Comparison (Sketching Implementations)    | Pending         |                |
-| Accuracy Comparison (Sketch Evaluator)               | Pending         |                |
+| Queue Size Exploration (Simulator)                   | Yes             | `Experiments/stall_rates`   |
+| Merger Exploration     (Simulator)                   | Yes             | `Experiments/stall_rates`   |
+| Ressource/Fmax Exploration (RTL Generator)           | Pending         |                             |
+| Throughput Comparison (Sketching Implementations)    | Pending         |                             |
+| Accuracy Comparison (Sketch Evaluator)               | Pending         |                              |
