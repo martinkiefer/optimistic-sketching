@@ -1,7 +1,7 @@
 # optimistic-sketching
 An optimistic approach to FPGA-accelerated data-parallel sketching. This repository accompanies a publication that is under submission. Stay tuned.
 
-Over the next few days, this repository will be filled with the artifacts listed below. Further information will be provided in individual README files.
+Over the next few days, this repository will be filled with the artifacts listed below. Over time, we will provide increasingly detailed documentation in the README files in subfolders starting with the experiments.
 
 ## Requirements
 * Python 3.9+ (RTL Generation, Dataset Generation)
@@ -81,8 +81,8 @@ Computes accuracy efficiently given input data and groundtruth. Requires CUDA an
 ## Experiment Sets
 | Experiment                                           | Provided        | Notes          |
 | -------                                              | --------        | -------------- |
-| Queue Size Exploration (Simulator)                   | Yes             | `Experiments/stall_rates`   |
-| Merger Exploration     (Simulator)                   | Yes             | `Experiments/stall_rates`   |
+| Queue Size Exploration (Simulator)                   | Yes             | `Experiments/stall_rates`, with README   |
+| Merger Exploration     (Simulator)                   | Yes             | `Experiments/stall_rates`, with README   |
 | Ressource/Fmax Exploration (RTL Generator)           | Pending         |                             |
 | Throughput Comparison (Sketching Implementations)    | Pending         |                             |
 | Accuracy Comparison (Sketch Evaluator)               | Pending         |                              |
