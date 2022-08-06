@@ -8,7 +8,7 @@ rm -rf "$i.$s"
 cp -r ../../dummy "$i.$s"
 cd "$i.$s"
 #Call scripts, create source folder
-python ../../../../ScotchDSL/Translation/generate_tl.py ../../../../Sketches/Select-Map-Reduce/sum-sketch-key32-value32-state64/descriptor.json $i ./sketch
+python ../../../../../ScotchDSL/Translation/generate_tl.py ../../../../../Sketches/Select-Map-Reduce/sum-sketch-key32-value32-state64/descriptor.json $i ./sketch
 #Run script
 bash compile.sh $VIVADO_DIR $s
 #Boom, done.
