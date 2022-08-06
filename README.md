@@ -5,7 +5,7 @@ Over the next few days, this repository will be filled with the artifacts listed
 
 ## Requirements
 * Python 3.9+ (RTL Generation, Dataset Generation)
-* Python Packages: antlr4-python3-runtime 4.9.3 (Code Generation), tensorflow-probability (we used 0.17.0, Zipf data)
+* Python Packages: antlr4-python3-runtime 4.9.3 (Code Generation), tensorflow-probability (we used 0.17.0, Zipf data), tensorflow (we used 2.9.1, Zipf data)
 * Vivado (we used 2021.2; for experiments with dummy I/O template)
 * Vitis (recently upgraded to 2022.1; for experiments with U250)
 * Xilinx Runtime (recently upgraded to 2022.1 + U250 XDMA 4.1 Shell)
