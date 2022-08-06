@@ -1,2 +1,3 @@
 #!/bin/bash
-head -c 2G </dev/urandom > ./uniform.bin
+rm -rf uniform*.bin
+head -c 2G </dev/urandom > ./uniform_key.bin
