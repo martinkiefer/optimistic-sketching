@@ -79,10 +79,10 @@ Computes accuracy efficiently given input data and groundtruth. Requires CUDA an
 | Sketch Evaluator                      | Yes             | `Evaluator/`   |
 
 ## Experiment Sets
-| Experiment                                           | Provided        | Notes          |
-| -------                                              | --------        | -------------- |
-| Queue Size Exploration (Simulator)                   | Yes             | `Experiments/stall_rates`, with README   |
-| Merger Exploration     (Simulator)                   | Yes             | `Experiments/stall_rates`, with README   |
-| Ressource/Fmax Exploration (RTL Generator)           | Pending         |                             |
-| Throughput Comparison (Sketching Implementations)    | Pending         |                             |
-| Accuracy Comparison (Sketch Evaluator)               | Pending         |                              |
+| Experiment                                           | Provided                     | Notes          |
+| -------                                              | --------                     | -------------- |
+| Queue Size Exploration (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
+| Merger Exploration     (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
+| Ressource/Fmax Exploration (RTL Generator)           | Pending                      |                                          |
+| Throughput Comparison (Sketching Implementations)    | Pending                      |                                          |
+| Accuracy Comparison (Sketch Evaluator)               | Pending                      |                                          |
