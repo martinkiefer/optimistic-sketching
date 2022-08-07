@@ -20,6 +20,15 @@ For the CUDA parts, any recent Nvidia GPU will do. We used an A100.
 
 For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742 (for historic reasons still caled Ryzen in the paper). It is generally recommended to run anything with use an x86_64 CPU with a recent Linux operating system as this is the only configuration we tested. Some artifacts may not compile or execute (e.g., tensorflow-probabilities is not available on a POWER system).
 
+## Experiment Sets
+| Experiment                                           | Provided                     | Notes          |
+| -------                                              | --------                     | -------------- |
+| Queue Size Exploration (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
+| Merger Exploration     (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
+| Ressource/Fmax Exploration (RTL Generator)           | Yes, with README             | `Experiments/resources+fmax`|
+| Throughput Comparison (Sketching Implementations)    | Pending                      |                                          |
+| Accuracy Comparison (Sketch Evaluator)               | Yes, with README             |  `Experiments/accuracy` |
+
 ## Datasets
 Our experiments use four different datasets:
 
@@ -78,12 +87,3 @@ Computes accuracy efficiently given input data and groundtruth. Requires CUDA an
 | Artifact                              | Provided        | Notes          |
 | -------                               | --------        | -------------- |
 | Sketch Evaluator                      | Yes             | `Evaluator/`   |
-
-## Experiment Sets
-| Experiment                                           | Provided                     | Notes          |
-| -------                                              | --------                     | -------------- |
-| Queue Size Exploration (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
-| Merger Exploration     (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
-| Ressource/Fmax Exploration (RTL Generator)           | Yes, with README             | `Experiments/resources+fmax`|
-| Throughput Comparison (Sketching Implementations)    | Pending                      |                                          |
-| Accuracy Comparison (Sketch Evaluator)               | Yes, with README             |  `Experiments/accuracy` |
