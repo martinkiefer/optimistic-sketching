@@ -83,6 +83,6 @@ Computes accuracy efficiently given input data and groundtruth. Requires CUDA an
 | -------                                              | --------                     | -------------- |
 | Queue Size Exploration (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
 | Merger Exploration     (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
-| Ressource/Fmax Exploration (RTL Generator)           | Yes                          | `Experiments/resources+fmax`|
+| Ressource/Fmax Exploration (RTL Generator)           | Yes, with README             | `Experiments/resources+fmax`|
 | Throughput Comparison (Sketching Implementations)    | Pending                      |                                          |
 | Accuracy Comparison (Sketch Evaluator)               | Pending                      |                                          |
