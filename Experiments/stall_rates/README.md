@@ -26,5 +26,5 @@ cat nyt_*.csv > nyt.csv
 
 The format of the csv file is
 ```
-"rows", "columnss", "inputs",  "banks", "queue_size", "horizontal_look_ahead", "unused_parameter", "has_vertical_merging", "cycles", "stalls", "stall_rate"
+"rows", "columns", "inputs",  "banks", "queue_size", "horizontal_look_ahead", "unused_parameter", "has_vertical_merging", "cycles", "stalls", "stall_rate"
 ```                                           
