@@ -82,7 +82,7 @@ if __name__ == '__main__':
         ds = d[0]
         if d[0] == "zipf":
             ds += F"_{d[1]}"
-        target = F"../../Data/{ds}_key.bin"
+        target = F"../../Data/{ds}_keys.bin"
 
         if d[0] == "uniform":
             command = f"cd ../../Data/; bash generate_uniform.sh"
@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
                 target = f"{ds}_i{j}_o{i}"
                 command = f"./hasher ../../Data/{ds}_key.bin ./{target}"
-                node = MakeNode(target, command, [mg.getNodeByKey(f"../../Data/{ds}_key.bin"), hasher_node])
+                node = MakeNode(target, command, [mg.getNodeByKey(f"../../Data/{ds}_keys.bin"), hasher_node])
                 mg.addNode(node)
 
     for d, m, n, (i, b), qs, sms, hsmqt, hsmt, j  in itertools.product(datasets, rows, cols, ib, qsizes, smg_sizes, has_smqt, has_smt, range(iterations)):
