@@ -26,8 +26,11 @@ For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742
 | Queue Size Exploration (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
 | Merger Exploration     (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
 | Ressource/Fmax Exploration (RTL Generator)           | Yes, with README             | `Experiments/resources+fmax`|
-| Throughput Comparison (Sketching Implementations)    | Pending                      |                                          |
-| Accuracy Comparison (Sketch Evaluator)               | Yes, with README             |  `Experiments/accuracy` |
+| Accuracy Comparison (Sketch Evaluator)               | Yes, with README             | `Experiments/accuracy` |
+| Throughput (GPU)                                     | Yes, with README             |                                          |
+| Throughput (CPU)                                     | Pending                      |                                          |
+| Throughput (U250)                                    | Pending                      |                                          |
+
 
 ## Datasets
 Our experiments use four different datasets:
