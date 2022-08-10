@@ -27,7 +27,7 @@ For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742
 | Merger Exploration     (Simulator)                   | Yes, with README             | `Experiments/stall_rates` |
 | Ressource/Fmax Exploration (RTL Generator)           | Yes, with README             | `Experiments/resources+fmax`|
 | Accuracy Comparison (Sketch Evaluator)               | Yes, with README             | `Experiments/accuracy` |
-| Throughput (GPU)                                     | Yes, with README             |                                          |
+| Throughput (GPU)                                     | Yes, with README             | `Experiments/throughput/GPU`|
 | Throughput (CPU)                                     | Pending                      |                                          |
 | Throughput (U250)                                    | Pending                      |                                          |
 
