@@ -3,7 +3,7 @@
 The Makefile will get all the datasets (if they are not already downloaded) and compile the two CUDA baselines. You need to specifiy your CUDA folder and the streaming multiprocessor architecture.
 ```
 export CUDA_PREFIX="/usr/local/cuda-11.2"
-GPU_ARCH ?= "sm_75"
+export GPU_ARCH="sm_75"
 make all # Use '-j num_processes' if you want things to go faster
 ```
 
