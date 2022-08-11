@@ -7,3 +7,4 @@ gunzip caida_keys.bin.gz
 wget https://tubcloud.tu-berlin.de/s/Jor96j5zCb882HA/download/caida_values.bin.gz  -O ./caida_values.bin.gz
 gunzip caida_values.bin.gz
 
+python rowify.py caida_keys.bin caida_values.bin caida.bin

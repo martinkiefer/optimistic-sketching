@@ -4,3 +4,5 @@ gunzip nyt_keys.bin.gz
 
 wget https://tubcloud.tu-berlin.de/s/bYkr7d5P6ks4obn/download/nyt_values.bin.gz  -O ./nyt_values.bin.gz
 gunzip nyt_values.bin.gz
+
+python rowify.py nyt_keys.bin nyt_values.bin nyt.bin
