@@ -7,7 +7,6 @@
 #include <sstream>
 #include <omp.h>
 
-#include "params.h"
 #include "utils.h"
 
 #define CHUNKS (REPLICAS)
@@ -125,7 +124,7 @@ int main( int argc, const char* argv[] )
     fsize = std::filesystem::file_size(path);
     p.chunk_size = fsize/(sizeof(Vb)*REPLICAS);
     p.chunk_size = (p.chunk_size / 64) * 64;
-    p.select_seed = (unsigned int*) readChunkFromFile("./seed.dump", sizeof(Kb)*8*p.nrows*sizeof(unsigned int), 0);
+    p.select_seed = (unsigned int*) readChunkFromFile("./seed.bin", sizeof(Kb)*8*p.nrows*sizeof(unsigned int), 0);
 
     double processing_time = 0.0;
     sketch_contruction(&p, processing_time);
