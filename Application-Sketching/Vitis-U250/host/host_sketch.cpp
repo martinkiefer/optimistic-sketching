@@ -40,9 +40,9 @@ Associated Filename: main.c
 
 ////////////////////////////////////////////////////////////////////////////////
 
-cl_uint load_file_to_memory(const char *filename, char **result)
+cl_ulong load_file_to_memory(const char *filename, char **result)
 {
-    cl_uint size = 0;
+    cl_ulong size = 0;
     FILE *f = fopen(filename, "rb");
     if (f == NULL) {
         *result = NULL;
@@ -50,6 +50,7 @@ cl_uint load_file_to_memory(const char *filename, char **result)
     }
     fseek(f, 0, SEEK_END);
     size = ftell(f);
+    std::cout << "! --" << size << std::endl;
     fseek(f, 0, SEEK_SET);
     *result = (char *)malloc(size+1);
     if (size != fread(*result, sizeof(char), size, f)) {
@@ -178,7 +179,7 @@ int main(int argc, char** argv)
     // xclbin
     //------------------------------------------------------------------------------
     //printf("INFO: loading xclbin %s\n", xclbin);
-    cl_uint n_i0 = load_file_to_memory(xclbin, (char **) &kernelbinary);
+    cl_ulong n_i0 = load_file_to_memory(xclbin, (char **) &kernelbinary);
     if (n_i0 < 0) {
         printf("ERROR: failed to load kernel from xclbin: %s\n", xclbin);
         printf("ERROR: Test failed\n");
@@ -220,8 +221,9 @@ int main(int argc, char** argv)
 
 
     char* data;
-    cl_uint ds = load_file_to_memory(databin, &data);
-    cl_uint dss = ds / 4;
+    cl_ulong ds = load_file_to_memory(databin, &data);
+    cl_ulong dss = ds / 4;
+    std::cout << "-----" << ds << std::endl;
 
     mem_ext.flags = XCL_MEM_DDR_BANK0;
     d_axi00_ptr0 = clCreateBuffer(context,  CL_MEM_READ_WRITE | CL_MEM_EXT_PTR_XILINX,  dss, &mem_ext, &err);
@@ -282,6 +284,7 @@ int main(int argc, char** argv)
 
     //Read
     cl_uint d_scalar00 = dss/sizeof(cl_uint);
+    std::cout << "xx " << d_scalar00 << std::endl;
     //Write
     cl_uint d_scalar01 = 0;
     //Selected output sketch (only valid if write is non-zero)
