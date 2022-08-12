@@ -1,7 +1,5 @@
 # optimistic-sketching
-An optimistic approach to FPGA-accelerated data-parallel sketching. This repository accompanies a publication that is under submission. Stay tuned.
-
-Over the next few days, this repository will be filled with the artifacts listed below. Over time, we will provide increasingly detailed documentation in the README files in subfolders starting with the experiments.
+An optimistic approach to FPGA-accelerated data-parallel sketching. This repository accompanies a publication that is under submission. Stay tuned. The README files for the experiment sets can get you started, but we will add more documentation for individual artifacts over time.
 
 ## Requirements
 * Python 3.9+ (RTL Generation, Dataset Generation)
