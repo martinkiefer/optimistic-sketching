@@ -29,7 +29,7 @@ For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742
 | Accuracy Comparison (Sketch Evaluator)               | Yes, with README             | `Experiments/accuracy` |
 | Throughput (GPU)                                     | Yes, with README             | `Experiments/throughput/GPU`|
 | Throughput (CPU)                                     | Yes, with README             | `Experiments/throughput/CPU` |
-| Throughput (U250)                                    | Pending                      |                                          |
+| Throughput (U250)                                    | Yes, with README             | `Experiments/throughput/U250` |
 
 
 ## Datasets
