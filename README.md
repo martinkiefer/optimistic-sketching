@@ -1,5 +1,6 @@
 # optimistic-sketching
 An optimistic approach to FPGA-accelerated data-parallel sketching. This repository accompanies the following publication:
+
 Martin Kiefer, Ilias Poulakis, Eleni Tzirita Zacharatou, and Volker Markl. Optimistic Data Parallelism for FPGA-Accelerated Sketching. PVLDB, 16(5): 1113 - 1125, 2023.
 
 ## Requirements
