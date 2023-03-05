@@ -18,7 +18,7 @@ If you want to compile and run the FPGA parts without changing anything, you wil
 
 For the CUDA parts, any recent Nvidia GPU will do. We used an A100 accelerator. 
 
-For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742 (for historic reasons still caled Ryzen in the paper). It is generally recommended to run anything on an x86_64 CPU with a recent Linux operating system as this is the only configuration we tested. Some artifacts may not compile or execute on other architectures (e.g., tensorflow-probabilities is not available on a POWER system).
+For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742. It is generally recommended to run anything on an x86_64 CPU with a recent Linux operating system as this is the only configuration we tested. Some artifacts may not compile or execute on other architectures (e.g., tensorflow-probabilities is not available on a POWER system).
 
 ## Experiment Sets
 | Experiment                                           | Provided                     | Notes          |
