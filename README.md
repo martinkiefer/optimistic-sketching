@@ -16,9 +16,9 @@ Martin Kiefer, Ilias Poulakis, Eleni Tzirita Zacharatou, and Volker Markl. Optim
 
 If you want to compile and run the FPGA parts without changing anything, you will need access to a U250 accelerator flashed with a compatibel deployment platform. Otherwise you may have to make changes to the project. 
 
-For the CUDA parts, any recent Nvidia GPU will do. We used an A100. 
+For the CUDA parts, any recent Nvidia GPU will do. We used an A100 accelerator. 
 
-For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742 (for historic reasons still caled Ryzen in the paper). It is generally recommended to run anything with use an x86_64 CPU with a recent Linux operating system as this is the only configuration we tested. Some artifacts may not compile or execute on other architectures (e.g., tensorflow-probabilities is not available on a POWER system).
+For the CPU baseline, any x86_64 CPU with AVX2 will do. We used an AMD EPYC 7742 (for historic reasons still caled Ryzen in the paper). It is generally recommended to run anything on an x86_64 CPU with a recent Linux operating system as this is the only configuration we tested. Some artifacts may not compile or execute on other architectures (e.g., tensorflow-probabilities is not available on a POWER system).
 
 ## Experiment Sets
 | Experiment                                           | Provided                     | Notes          |
@@ -52,7 +52,7 @@ The accuracy experiments also require the groundtrouth for the approximate-group
 | Caida                         | Yes               |`Data/gt/caida/generate.sh`                |
 | NYT                           | Yes               |`Data/gt/nyt/generate.sh`                  |
 
-For now, we spare everyone the time- and storage-intensive preprocessing for real-wolrd datasets and just provide gzipped binary downloads from TUBs Nextcloud. Datasets are still quite large, though. It's best to have around 50GB of free disk space.
+We spare you the time- and storage-intensive preprocessing for real-wolrd datasets and just provide gzipped binary downloads from TUBs Nextcloud. Datasets are quite large, though. It's best to have around 50GB of free disk space.
 
 ## Full Sketching Implementations
 Sketching for group-by application. Used in throughput experiments.
@@ -66,7 +66,7 @@ Sketching for group-by application. Used in throughput experiments.
 | CPU (vectorized + multithreaded)    | Yes             | `Application-Sketching/SIMD+OpenMP`               |
 | CUDA                                | Yes             | `Application-Sketching/CUDA`                      |
 
-FPGA device code is provided as Zips than can be imported using `Vitis -> File -> Import...`. Large BLOBs in Git are not ideal and we are working on a smarter solution.
+FPGA device code is provided as Zips than can be imported using `Vitis -> File -> Import...`.
 
 ## RTL Generation
 Based on [Scotch](https://github.com/martinkiefer/Scotch) and used for ressource consumption experiments. RTL generation was also used to generate the sketching RTL sitting inside the RTL kernels of U250 sketching implementations.
