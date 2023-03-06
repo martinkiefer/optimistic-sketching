@@ -6,7 +6,7 @@ bash generateParser.sh
 It  downloads ANTLR4, generate the parser files and copies them to the translation directory where they are needed.
 
 # RTL Generators
-TBD
+See `optimistic-sketching/Experiments/resources-fmax`.
 
 
 
