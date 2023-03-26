@@ -52,7 +52,7 @@ The accuracy experiments also require the groundtrouth for the approximate-group
 | Caida                         | Yes               |`Data/gt/caida/generate.sh`                |
 | NYT                           | Yes               |`Data/gt/nyt/generate.sh`                  |
 
-We spare you the time- and storage-intensive preprocessing for real-wolrd datasets and just provide gzipped binary downloads from TUBs Nextcloud. Datasets are quite large, though. It's best to have around 50GB of free disk space.
+We spare you the time- and storage-intensive preprocessing for real-world datasets and just provide gzipped binary downloads. Datasets are quite large, though. It's best to have around 50GB of free disk space.
 
 ## Full Sketching Implementations
 Sketching for group-by application. Used in throughput experiments.
