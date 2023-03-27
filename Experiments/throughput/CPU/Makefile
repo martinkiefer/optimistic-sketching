@@ -2,7 +2,7 @@ all : ./seed.bin ./one-per-thread ./one-per-core ../../../Data/wc98_keys.bin ../
 
 
 ./one-per-thread :
-	g++ -O2 -std=c++17 ../../../Application-Sketching/SIMD+OpenMP/cm-app.cpp -march=native -mtune=native -shared-libgcc -fopenmp -DREPLICAS=64 -o one-per-thread
+	g++ -O2 -std=c++17 ../../../Application-Sketching/SIMD+OpenMP/cm-app.cpp -march=native -mtune=native -shared-libgcc -fopenmp -DREPLICAS=256 -o one-per-thread
 
 ./one-per-core :
 	g++ -O2 -std=c++17 ../../../Application-Sketching/SIMD+OpenMP/cm-app.cpp -march=native -mtune=native -shared-libgcc -fopenmp -DREPLICAS=128 -o one-per-core
