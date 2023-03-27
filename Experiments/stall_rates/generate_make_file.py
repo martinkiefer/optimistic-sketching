@@ -54,9 +54,6 @@ if __name__ == '__main__':
     else:
         print("Invalid program argumens only options allowed are (cross, queue_size, merging)")
         exit(1)
-    qsizes = [None]
-    smg_sizes = [0, 2, 4, 8, 16, 32, 64, 128]
-    has_smt = [1]
     iterations = 10
 
     mg = MakeGraph()
@@ -118,7 +115,7 @@ if __name__ == '__main__':
                     ds += F"_{d[1]}"
 
                 target = f"{ds}_i{j}_o{i}"
-                command = f"./hasher ../../Data/{ds}_key.bin ./{target}"
+                command = f"./hasher ../../Data/{ds}_keys.bin ./{target}"
                 node = MakeNode(target, command, [mg.getNodeByKey(f"../../Data/{ds}_keys.bin"), hasher_node])
                 mg.addNode(node)
 
